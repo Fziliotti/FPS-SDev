@@ -17,5 +17,6 @@
 		"gulp-rename": "^1.2.2",
 		"gulp-sass": "4.0.1",
 		"gulp-uglify": "^3.0.1"
-	}
+	},
+	"dependencies": {}
 }

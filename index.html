@@ -79,7 +79,7 @@
             <h1>Equipe de Desenvolvimento</h1>
         </header>
 
-        <div class="team__grid container60">
+        <div id="team__grid" class="team__grid container60">
             <article class="team__grid__item">
                 membro 1
             </article>
@@ -131,7 +131,7 @@
     </footer>
 
 
- 
+
 
 
 
@@ -142,50 +142,75 @@
             btnMenu.classList.toggle("active");
         });
     </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-    <script>
-        const items = document.querySelectorAll('.projects__grid__item');
-        
-        const tl = new TimelineMax();
-        tl.staggerFrom(items, .5, {
-            scale: 0,
-            opacity: 0
-        }, .3);
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script src="/js/noframework.waypoints.min.js"></script>
 
-        const brand = document.querySelector('.intro__brand h1');
-        const title = document.querySelector('.intro__title');
-        const subtitle = document.querySelector('.intro__subtitle');
-        const t2 = new TimelineMax();
-        t2.from(brand, .5, {
-                x: 500,
-                opacity: 0
-            })
-            .from(title, .5, {
-                x: -500,
-                opacity: 0
-            })
-            .from(subtitle, .5, {
-                scale: 0,
-                opacity: 0
-            })
+    <!-- no points ABAIXO -->
+    <script>
+        var flag1 = false;
+        var waypoint = new Waypoint({
+            element: document.querySelector('.projects'),
+            handler: () => {
+                if (!flag1) {
+                    const items = document.querySelectorAll('.projects__grid__item');
+
+                    const tl = new TimelineMax();
+                    tl.staggerFrom(items, .5, {
+                        scale: 0,
+                        opacity: 0
+                    }, .3);
+
+                    const brand = document.querySelector('.intro__brand h1');
+                    const title = document.querySelector('.intro__title');
+                    const subtitle = document.querySelector('.intro__subtitle');
+                    const t2 = new TimelineMax();
+                    t2.from(brand, .5, {
+                            x: 500,
+                            opacity: 0
+                        })
+                        .from(title, .5, {
+                            x: -500,
+                            opacity: 0
+                        })
+                        .from(subtitle, .5, {
+                            scale: 0,
+                            opacity: 0
+                        })
+                    flag1 = true;
+                }
+                console.log("RODOU DENTRO DO WAYPONT1");
+            },
+            offset: '75%'
+        });
+
+        // SEGUNDA SECTION COM O WAYPOINT
+        var flag2 = false;
+        var waypoint2 = new Waypoint({
+            element: document.querySelector('.team'),
+            handler: () => {
+                if (!flag2) {
+                    const items2 = document.querySelectorAll('.team__grid__item');
+                    TweenMax.staggerFromTo(items2, .5, {
+                        scale: .3,
+                        rotation: 180
+                    }, {
+                        scale: 1.1,
+                        rotation: 0
+                    }, .3);
+                    flag2 = true;
+                }
+                console.log("RODOU DENTRO DO WAYPONT2");
+            },
+            offset: '75%'
+        })
     </script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-    <script>
-        const items2 = document.querySelectorAll('.team__grid__item');
 
-        TweenMax.staggerFromTo(items2, .5, {
-            scale: .3,
-            rotation: 180
-        }, {
-            scale: 1.1,
-            rotation: 0
-        }, .3);
-    </script>
 
-    
+
+
 </body>
 
 </html>
