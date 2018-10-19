@@ -149,6 +149,23 @@
 
     <!-- no points ABAIXO -->
     <script>
+        const brand = document.querySelector('.intro__brand h1');
+        const title = document.querySelector('.intro__title');
+        const subtitle = document.querySelector('.intro__subtitle');
+        const t2 = new TimelineMax();
+        t2.from(brand, .5, {
+                x: 500,
+                opacity: 0
+            })
+            .from(title, .5, {
+                x: -500,
+                opacity: 0
+            })
+            .from(subtitle, .5, {
+                scale: 0,
+                opacity: 0
+            })
+
         var flag1 = false;
         var waypoint = new Waypoint({
             element: document.querySelector('.projects'),
@@ -162,22 +179,7 @@
                         opacity: 0
                     }, .3);
 
-                    const brand = document.querySelector('.intro__brand h1');
-                    const title = document.querySelector('.intro__title');
-                    const subtitle = document.querySelector('.intro__subtitle');
-                    const t2 = new TimelineMax();
-                    t2.from(brand, .5, {
-                            x: 500,
-                            opacity: 0
-                        })
-                        .from(title, .5, {
-                            x: -500,
-                            opacity: 0
-                        })
-                        .from(subtitle, .5, {
-                            scale: 0,
-                            opacity: 0
-                        })
+
                     flag1 = true;
                 }
                 console.log("RODOU DENTRO DO WAYPONT1");
