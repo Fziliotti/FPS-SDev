@@ -7,21 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=K2D|Open+Sans|Titillium+Web" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
     <section class="intro">
-        <div class="intro__brand">
-            Lorem
-        </div>
+        <header class="intro__brand">
+            <h1 data-aos="fade-in">Landing</h1>
+        </header>
 
+        <!-- BTN-SUPERIOR-ESQUERDO -->
         <div class="intro__menu">
-            <div class="block">
-                <div class="cta">
-                    <div class="toggle-btn type9"></div>
-                </div>
+            <div class="intro__menu__cta">
+                <div class="toggle-btn btn-1"></div>
             </div>
         </div>
 
@@ -32,15 +34,119 @@
     </section>
 
 
+    <section class="projects">
+        <header class="projects__header">
+            <h1 data-aos="fade-in">Projetos Desenvolvidos</h1>
+        </header>
+
+        <div class="projects__grid container60">
+            <article class="projects__grid__item">
+                artigo1
+            </article>
+
+            <article class="projects__grid__item">
+                artigo2
+            </article>
+            <article class="projects__grid__item">
+                artigo3
+            </article>
+            <article class="projects__grid__item">
+                artigo4
+            </article>
+            <article class="projects__grid__item">
+                artigo5
+            </article>
+            <article class="projects__grid__item">
+                artigo6
+            </article>
+            <article class="projects__grid__item">
+                artigo7
+            </article>
+            <article class="projects__grid__item">
+                artigo8
+            </article>
+            <article class="projects__grid__item">
+                artigo9
+            </article>
+
+        </div>
 
 
-<script>
-    var btnMenu = document.querySelector(".cta");
-    btnMenu.addEventListener("click", function(){
-        btnMenu.classList.toggle("active");
-    });
 
-</script>
+    </section>
+
+    <section class="team">
+        <header class="team__header">
+            <h1 data-aos="fade-in">Equipe de Desenvolvimento</h1>
+        </header>
+
+        <div class="team__grid container60">
+            <article class="team__grid__item">
+                membro1
+            </article>
+
+            <article class="team__grid__item">
+                membro2
+            </article>
+            <article class="team__grid__item">
+                membro3
+            </article>
+            <article class="team__grid__item">
+                membro4
+            </article>
+            <article class="team__grid__item">
+                membro5
+            </article>
+            <article class="team__grid__item">
+                membro6
+            </article>
+            <article class="team__grid__item">
+                membro7
+            </article>
+            <article class="team__grid__item">
+                membro8
+            </article>
+            <article class="team__grid__item">
+                membro9
+            </article>
+        </div>
+    </section>
+
+    <section class="social-media">
+        <div class="social-media__container">
+            <div class="social-media__item">
+                <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="social-media__item">
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="social-media__item">
+                <i class="fab fa-github"></i>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        Desenvolvido por Fabrício Ziliotti
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        var btnMenu = document.querySelector(".intro__menu__cta");
+        btnMenu.addEventListener("click", function () {
+            btnMenu.classList.toggle("active");
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

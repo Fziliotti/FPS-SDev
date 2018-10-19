@@ -1,0 +1,21 @@
+@keyframes subAnime {
+    0% {
+        color: #4C5B5C;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+@keyframes brandAnime {
+    0% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes bgAnime {
+    100% {
+        background-color: white;
+    }
+}
