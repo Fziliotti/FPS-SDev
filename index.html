@@ -10,14 +10,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
     <section class="intro">
         <header class="intro__brand">
-            <h1 data-aos="fade-in">Landing</h1>
+            <h1 >Landing</h1>
         </header>
 
         <!-- BTN-SUPERIOR-ESQUERDO -->
@@ -36,7 +35,7 @@
 
     <section class="projects">
         <header class="projects__header">
-            <h1 data-aos="fade-in">Projetos Desenvolvidos</h1>
+            <h1 >Projetos Desenvolvidos</h1>
         </header>
 
         <div class="projects__grid container60">
@@ -77,7 +76,7 @@
 
     <section class="team">
         <header class="team__header">
-            <h1 data-aos="fade-in">Equipe de Desenvolvimento</h1>
+            <h1 >Equipe de Desenvolvimento</h1>
         </header>
 
         <div class="team__grid container60">
@@ -143,9 +142,35 @@
             btnMenu.classList.toggle("active");
         });
     </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
     <script>
-        AOS.init();
+        const items = document.querySelectorAll('.team__grid__item,.projects__grid__item');
+
+
+        const tl = new TimelineMax();
+
+        tl.staggerFrom(items, .5, {
+            scale: 0,
+            opacity: 0
+        }, .3);
+
+        const brand = document.querySelector('.intro__brand h1');
+        const title = document.querySelector('.intro__title');
+        const subtitle = document.querySelector('.intro__subtitle');
+        const t2 = new TimelineMax();
+        t2.from(brand, .5, {
+                x: 500,
+                opacity: 0
+            })
+            .from(title, .5, {
+                x: -500,
+                opacity: 0
+            })
+            .from(subtitle, .5, {
+                scale: 0,
+                opacity: 0
+            })
     </script>
 </body>
 
