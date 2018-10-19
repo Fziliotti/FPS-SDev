@@ -76,7 +76,6 @@
             box-shadow: 0 0 0 0 #fff;
         }
     }
-
     &__brand {
         position: absolute;
         top: 5%;
@@ -86,23 +85,18 @@
         font-size: 2rem;
         animation: brandAnime 5s ease-in-out alternate-reverse infinite;
     }
-
     &__text {
         color: white;
 
     }
-
     &__title {
         font-size: 3rem;
 
     }
-
     &__subtitle {
         font-size: 1.5rem;
         animation: subAnime 5s ease-in-out alternate-reverse infinite;
     }
-
-
 }
 
 
@@ -112,9 +106,8 @@
     background: url(../img/bgprojects.jpg);
     // background:rgba(0,0,0, 0.03);
     -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
-    
- 
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+
     margin-top: .2rem;
     padding: 10rem 0;
 
@@ -125,11 +118,9 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 9
     }
 
     &__grid {
-
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1.6rem;
-
         &__item {
             background-color: #06beb6;
             height: 130px;
@@ -142,7 +133,7 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 9
             box-shadow: 0px 1px 8px 0px gray;
             cursor: pointer;
             color: white;
-
+            
         }
     }
 }
@@ -166,15 +157,15 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 9
     padding: 5rem 0;
     background: #eee;
     -webkit-clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0 15%);
-clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0 15%);
- 
+    clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0 15%);
+
     margin-top: .2rem;
     padding: 6rem 0;
 
     &__header {
         font-size: 1.8rem;
         margin-bottom: 2rem;
-        color:cornflowerblue;
+        color: cornflowerblue;
     }
 
     &__grid {
@@ -195,32 +186,31 @@ clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0 15%);
             box-shadow: 0px 1px 8px 0px gray;
             cursor: pointer;
             color: white;
-
         }
     }
 }
 
-.footer{
+.footer {
     background-color: #06beb6;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:1.25rem;
-    color:white;
+    font-size: 1.25rem;
+    color: white;
     height: 70px;
 }
 
-.social-media{
+.social-media {
     height: 150px;
     background-color: #f3f3f3;
-    color:black;
+    color: black;
     font-size: rem;
     display: flex;
     align-items: center;
 
-    &__container{
+    &__container {
         width: 20%;
-        margin:0 auto;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -230,10 +220,10 @@ clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0 15%);
         font-size: 2.8rem;
         color: #06beb6;
         cursor: pointer;
-        transition: 0.3s  all ease-in-out;
+        transition: 0.3s all ease-in-out;
 
-        &:hover{
-           opacity: 0.6;
+        &:hover {
+            opacity: 0.6;
         }
     }
 }
