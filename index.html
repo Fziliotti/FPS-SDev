@@ -16,7 +16,7 @@
 
     <section class="intro">
         <header class="intro__brand">
-            <h1 >Landing</h1>
+            <h1>Landing</h1>
         </header>
 
         <!-- BTN-SUPERIOR-ESQUERDO -->
@@ -35,7 +35,7 @@
 
     <section class="projects">
         <header class="projects__header">
-            <h1 >Projetos Desenvolvidos</h1>
+            <h1>Projetos Desenvolvidos</h1>
         </header>
 
         <div class="projects__grid container60">
@@ -76,37 +76,37 @@
 
     <section class="team">
         <header class="team__header">
-            <h1 >Equipe de Desenvolvimento</h1>
+            <h1>Equipe de Desenvolvimento</h1>
         </header>
 
         <div class="team__grid container60">
             <article class="team__grid__item">
-                membro1
+                membro 1
             </article>
 
             <article class="team__grid__item">
-                membro2
+                membro 2
             </article>
             <article class="team__grid__item">
-                membro3
+                membro 3
             </article>
             <article class="team__grid__item">
-                membro4
+                membro 4
             </article>
             <article class="team__grid__item">
-                membro5
+                membro 5
             </article>
             <article class="team__grid__item">
-                membro6
+                membro 6
             </article>
             <article class="team__grid__item">
-                membro7
+                membro 7
             </article>
             <article class="team__grid__item">
-                membro8
+                membro 8
             </article>
             <article class="team__grid__item">
-                membro9
+                membro 9
             </article>
         </div>
     </section>
@@ -131,7 +131,7 @@
     </footer>
 
 
-
+ 
 
 
 
@@ -145,11 +145,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
     <script>
-        const items = document.querySelectorAll('.team__grid__item,.projects__grid__item');
-
-
+        const items = document.querySelectorAll('.projects__grid__item');
+        
         const tl = new TimelineMax();
-
         tl.staggerFrom(items, .5, {
             scale: 0,
             opacity: 0
@@ -172,6 +170,22 @@
                 opacity: 0
             })
     </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <script>
+        const items2 = document.querySelectorAll('.team__grid__item');
+
+        TweenMax.staggerFromTo(items2, .5, {
+            scale: .3,
+            rotation: 180
+        }, {
+            scale: 1.1,
+            rotation: 0
+        }, .3);
+    </script>
+
+    
 </body>
 
 </html>
