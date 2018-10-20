@@ -15,9 +15,11 @@
 
 <body>
 
+
     <section class="intro">
         <header class="intro__brand">
-            <h1>Landing</h1>
+            <h1>BRAND</h1>
+            
         </header>
 
         <!-- BTN-SUPERIOR-ESQUERDO -->
@@ -27,16 +29,30 @@
             </div>
         </div>
 
+        <nav class="intro__nav"> 
+            <ul>
+                <li class="intro__nav__item"><a data-scroll href="#Projetos">Projetos</a> </li>
+                <li class="intro__nav__item"><a data-scroll href="#Equipe">Equipe</a></li>
+                <li class="intro__nav__item"><a data-scroll href="#Repositorios">Repositórios</a></li>
+                <li class="intro__nav__item"><a data-scroll href="#Social">Social</a></li>
+                <li class="intro__nav__item"><a href="https://fziliotti.github.io/BlogFziliotti/"></a> Blog</li>
+            </ul>
+        </nav>
+
         <div class="intro__text">
-            <h1 class="intro__title">Lorem, ipsum dolor.</h1>
+            <h1 class="intro__title">
+                OnePage
+                <span class=" typewrite" data-period="1000" data-type='[ "by Fziliotti","with SASS", "with CSS3", "with Javascript", "Gulp"]'></span>
+            </h1>
             <h2 class="intro__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ea?</h2>
         </div>
     </section>
 
 
-    <section class="projects">
-        <header class="projects__header">
+    <section id="Projetos"  class="projects">
+        <header  class="projects__header">
             <h1>Projetos Desenvolvidos</h1>
+            <hr class="divider divider-primary">
         </header>
 
         <div class="projects__grid container60">
@@ -70,17 +86,15 @@
             </article>
 
         </div>
-
-
-
     </section>
 
-    <section class="team">
-        <header class="team__header">
+    <section  id="Equipe"  class="team">
+        <header  class="team__header">
             <h1>Equipe de Desenvolvimento</h1>
+            <hr class="divider divider-primary">
         </header>
 
-        <div id="team__grid" class="team__grid container60">
+        <div class="team__grid container60">
             <article class="team__grid__item">
                 membro 1
             </article>
@@ -112,37 +126,81 @@
         </div>
     </section>
 
-    <section class="social-media">
+
+    <section id="Repositorios" class="repositories">
+        <header  class="repositories__header">
+            <h1>Repositórios do Github</h1>
+            <hr class="divider divider-primary">
+        </header>
+
+        <div class="repositories__grid container60">
+            <article class="repositories__grid__item">
+                repositorio 1
+            </article>
+
+            <article class="repositories__grid__item">
+                repositorio 2
+            </article>
+            <article class="repositories__grid__item">
+                repositorio 3
+            </article>
+            <article class="repositories__grid__item">
+                repositorio 4
+            </article>
+            <article class="repositories__grid__item">
+                repositorio 5
+            </article>
+            <article class="repositories__grid__item">
+                repositorio 6
+            </article>
+            <article class="repositories__grid__item">
+                repositorio 7
+            </article>
+            <article class="repositories__grid__item">
+                repositorio 8
+            </article>
+            <article class="repositories__grid__item">
+                repositorio 9
+            </article>
+
+        </div>
+    </section>
+
+    <section id="Social" class="social-media">
         <div class="social-media__container">
-            <div class="social-media__item">
-                <i class="fab fa-facebook-square"></i>
+            <div class="social-media__item ">
+                <i class="fab fa-facebook-square "></i>
             </div>
             <div class="social-media__item">
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin "></i>
             </div>
             <div class="social-media__item">
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github "></i>
 
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        Desenvolvido por SlashDev
+        Developed with ❤ from scratch
+        <p>by <a class="link" href="https://fziliotti.github.io/Fziliotti/"> Fabrício Ziliotti</a> </p>
     </footer>
-
-
-
-
-
-
 
     <script>
         var btnMenu = document.querySelector(".intro__menu__cta");
+        var introNav = document.querySelector(".intro__nav");
         btnMenu.addEventListener("click", function () {
             btnMenu.classList.toggle("active");
+            introNav.classList.toggle("show");
+
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script src="js/typewritter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
     <script src="js/noframework.waypoints.min.js"></script>
@@ -172,14 +230,11 @@
             handler: () => {
                 if (!flag1) {
                     const items = document.querySelectorAll('.projects__grid__item');
-
                     const tl = new TimelineMax();
                     tl.staggerFrom(items, .5, {
                         scale: 0,
                         opacity: 0
                     }, .3);
-
-
                     flag1 = true;
                 }
                 console.log("RODOU DENTRO DO WAYPONT1");

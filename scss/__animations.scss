@@ -7,8 +7,23 @@
         color: #fff;
     }
 }
+@-webkit-keyframes subAnime {
+    0% {
+        color: #4C5B5C;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
 
 @keyframes brandAnime {
+    0% {
+        transform: rotate(-10deg);
+    }
+}
+
+@-webkit-keyframes brandAnime {
     0% {
         transform: rotate(-10deg);
     }
@@ -17,5 +32,46 @@
 @keyframes bgAnime {
     100% {
         background-color: white;
+    }
+}
+@-webkit-keyframes bgAnime {
+    100% {
+        background-color: white;
+    }
+}
+
+
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
 }

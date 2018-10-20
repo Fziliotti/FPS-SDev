@@ -1,15 +1,12 @@
-$colors: (
-    primary: #247BA0,
-    secondary: #70C1B3,
-    tertiary: #4C5B5C,
-    quaternary: #F3FFBD,
-    background: #fff
-);
+$colors: (primary: #247BA0,
+secondary: #70C1B3,
+tertiary: #4C5B5C,
+quaternary: #F3FFBD,
+background: #fff);
 
 @function color($color-name) {
     @return map-get($colors, $color-name)
 }
-
 
 *,
 *::after,
@@ -24,3 +21,84 @@ body {
     line-height: 1.57;
     font-family: 'Titillium Web', sans-serif;
 }
+
+// barra de rolagem padrão
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 10px;
+
+}
+
+// Are do caminho que a barra vai percorrer
+::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+
+}
+
+// Responsável por editar como será a scrollbar na vertical do site;
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: #666;
+
+}
+
+// Personaliza a barra que ao invés de ser na vertical, é na horizontal.
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: #666;
+
+}
+
+// HR
+.divider {
+    width: 40%;
+    margin: 0 auto;
+    height: 1.5px;
+    outline: none;
+    border: none;
+   
+}
+
+.divider-secondary{
+    background: #485563;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.divider-primary{
+    background: #06beb6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #48b1bf, #06beb6);
+}
+
+
+.link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s all ease-in-out;
+
+}
+
+.link:hover {
+    color: #666;
+}
+
+// TYPE WRITTER
+.typewrite__wrapper{
+    border-right: 2px solid #fff;
+    padding-right: 4px;
+
+}
+
+.show {
+    opacity: 1 !important;
+}
+
+// .typewrite__barra:last-child {
+//     color:red;
+
+// }
