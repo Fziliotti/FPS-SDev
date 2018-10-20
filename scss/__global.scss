@@ -49,30 +49,44 @@ body {
 
 }
 
-// HR
+
 .divider {
     width: 40%;
     margin: 0 auto;
     height: 1.5px;
     outline: none;
     border: none;
-   
+    display: block;
 }
 
-.divider-secondary{
-    background: #485563;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+.divider-card {
+    width: 70%;
+    margin: 0 auto;
+    height: 1.5px;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 5px 0;
 }
 
-.divider-primary{
+
+
+.divider-secondary {
+    background: #485563;
+    background: -webkit-linear-gradient(to right, #29323c, #485563);
+    background: linear-gradient(to right, #29323c, #485563);
+}
+
+.divider-primary {
     background: #06beb6;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #48b1bf, #06beb6);
 }
+
+.divider-tertiary {
+    background: #fff;
+}
+
 
 
 .link {
@@ -87,8 +101,7 @@ body {
     color: #666;
 }
 
-// TYPE WRITTER
-.typewrite__wrapper{
+.typewrite__wrapper {
     border-right: 2px solid #fff;
     padding-right: 4px;
 
@@ -98,7 +111,21 @@ body {
     opacity: 1 !important;
 }
 
-// .typewrite__barra:last-child {
-//     color:red;
 
-// }
+// BG COLORS
+.bg-1 {
+    background-color: #06beb6;
+}
+
+.bg-2 {
+    background-color: #26547C;
+
+}
+
+.bg-3 {
+    background-color: #EF476F;
+}
+
+.bg-4{
+    background-color: #FFD166;
+}

@@ -15,11 +15,11 @@
 
 <body>
 
-
+    <!-- SECTION INTRO -->
     <section class="intro">
         <header class="intro__brand">
             <h1>BRAND</h1>
-            
+
         </header>
 
         <!-- BTN-SUPERIOR-ESQUERDO -->
@@ -29,13 +29,14 @@
             </div>
         </div>
 
-        <nav class="intro__nav"> 
+        <nav class="intro__nav">
             <ul>
                 <li class="intro__nav__item"><a data-scroll href="#Projetos">Projetos</a> </li>
                 <li class="intro__nav__item"><a data-scroll href="#Equipe">Equipe</a></li>
                 <li class="intro__nav__item"><a data-scroll href="#Repositorios">Repositórios</a></li>
                 <li class="intro__nav__item"><a data-scroll href="#Social">Social</a></li>
-                <li class="intro__nav__item"><a href="https://fziliotti.github.io/BlogFziliotti/"></a> Blog</li>
+                <li class="intro__nav__item"><a title="Personal Blog" rel="Personal Blog" href="https://fziliotti.github.io/BlogFziliotti/"></a>
+                    Blog</li>
             </ul>
         </nav>
 
@@ -48,9 +49,9 @@
         </div>
     </section>
 
-
-    <section id="Projetos"  class="projects">
-        <header  class="projects__header">
+    <!-- SECTION PROJECTS -->
+    <section id="Projetos" class="projects">
+        <header class="projects__header">
             <h1>Projetos Desenvolvidos</h1>
             <hr class="divider divider-primary">
         </header>
@@ -88,8 +89,9 @@
         </div>
     </section>
 
-    <section  id="Equipe"  class="team">
-        <header  class="team__header">
+    <!-- SECTION TEAM -->
+    <section id="Equipe" class="team">
+        <header class="team__header">
             <h1>Equipe de Desenvolvimento</h1>
             <hr class="divider divider-primary">
         </header>
@@ -127,65 +129,83 @@
     </section>
 
 
+    <!-- SECTION REPOSITORIES -->
     <section id="Repositorios" class="repositories">
-        <header  class="repositories__header">
+        <header class="repositories__header">
             <h1>Repositórios do Github</h1>
             <hr class="divider divider-primary">
         </header>
 
-        <div class="repositories__grid container60">
-            <article class="repositories__grid__item">
-                repositorio 1
+        <div class="repositories__grid container70">
+            <article class="repositories__grid__item bg-3">
+                <div class="repositories__grid__item__title">
+                    <h1>Repositorio1</h1>
+                </div>
+                <hr class="divider-card  divider-tertiary">
+                <div class="repositories__grid__item__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem exercitationem voluptatibus dicta
+                    saepe repudiandae nobis adipisci quidem. Voluptatibus, rem minima.
+                </div>
+                <div  class="repositories__grid__item__footer pulse">
+                    <a  href="">link aqui</a>
+                </div>
             </article>
 
-            <article class="repositories__grid__item">
-                repositorio 2
+            <article class="repositories__grid__item bg-2">
+                <div class="repositories__grid__item__title">
+                    <h1>Repositorio1</h1>
+                </div>
+                <hr class="divider-card  divider-tertiary">
+                <div class="repositories__grid__item__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem exercitationem voluptatibus dicta
+                    saepe repudiandae nobis adipisci quidem. Voluptatibus, rem minima.
+                </div>
+                <div class="repositories__grid__item__footer pulse">
+                    <a  href="">link aqui</a>
+                </div>
             </article>
-            <article class="repositories__grid__item">
-                repositorio 3
-            </article>
-            <article class="repositories__grid__item">
-                repositorio 4
-            </article>
-            <article class="repositories__grid__item">
-                repositorio 5
-            </article>
-            <article class="repositories__grid__item">
-                repositorio 6
-            </article>
-            <article class="repositories__grid__item">
-                repositorio 7
-            </article>
-            <article class="repositories__grid__item">
-                repositorio 8
-            </article>
-            <article class="repositories__grid__item">
-                repositorio 9
+
+            <article class="repositories__grid__item bg-1">
+                <div class="repositories__grid__item__title">
+                    <h1>Repositorio1</h1>
+                </div>
+                <hr class="divider-card  divider-tertiary">
+                <div class="repositories__grid__item__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem exercitationem voluptatibus dicta
+                    saepe repudiandae nobis adipisci quidem. Voluptatibus, rem minima.
+                </div>
+                <div class="repositories__grid__item__footer pulse">
+                    <a  href="">link aqui</a>
+                </div>
             </article>
 
         </div>
     </section>
 
+    <!-- SECTION SOCIAL -->
     <section id="Social" class="social-media">
         <div class="social-media__container">
             <div class="social-media__item ">
-                <i class="fab fa-facebook-square "></i>
+                <i class="fab fa-facebook-square pulse"></i>
             </div>
             <div class="social-media__item">
-                <i class="fab fa-linkedin "></i>
+                <i class="fab fa-linkedin pulse"></i>
             </div>
             <div class="social-media__item">
-                <i class="fab fa-github "></i>
+                <i class="fab fa-github pulse"></i>
 
             </div>
         </div>
     </section>
 
+    <!-- FOOTER SITE -->
     <footer class="footer">
         Developed with ❤ from scratch
         <p>by <a class="link" href="https://fziliotti.github.io/Fziliotti/"> Fabrício Ziliotti</a> </p>
     </footer>
 
+
+    <!-- SCRIPTS  -->
     <script>
         var btnMenu = document.querySelector(".intro__menu__cta");
         var introNav = document.querySelector(".intro__nav");
