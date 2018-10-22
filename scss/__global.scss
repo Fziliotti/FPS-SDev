@@ -132,8 +132,8 @@ body {
 
 
 canvas {
-    z-index: 1;
-    position: absolute;
+    z-index: 0;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;

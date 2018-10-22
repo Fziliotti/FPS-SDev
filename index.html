@@ -10,6 +10,7 @@
     <title>Front Page Sass</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -17,13 +18,14 @@
 
     <!-- SECTION INTRO -->
     <section class="intro">
+        <canvas id="particulas"></canvas>
         <header class="intro__brand">
-            <h1>BRAND</h1>
-
+            <h1 data-aos="fade-up">BRAND</h1>
         </header>
 
         <!-- BTN-SUPERIOR-ESQUERDO -->
         <div class="intro__menu">
+
             <div class="intro__menu__cta">
                 <div class="toggle-btn btn-1"></div>
             </div>
@@ -41,48 +43,49 @@
         </nav>
 
         <div class="intro__text">
-            <h1 class="intro__title">
-                OnePage
+            <h1 data-aos="fade-up" class="intro__title">
+                <span>OnePage</span>
                 <span class=" typewrite" data-period="1000" data-type='[ "by Fziliotti","with SASS", "with CSS3", "with Javascript", "Gulp"]'></span>
             </h1>
-            <h2 class="intro__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ea?</h2>
+            <h2 data-aos="fade-down" class="intro__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Culpa, ea?</h2>
         </div>
     </section>
 
     <!-- SECTION PROJECTS -->
     <section id="Projetos" class="projects">
-        <header class="projects__header">
+        <header data-aos="flip-right" class="projects__header">
             <h1>Projetos Desenvolvidos</h1>
             <hr class="divider divider-primary">
         </header>
 
-        <div class="projects__grid container60">
-            <article class="projects__grid__item">
+        <div  class="projects__grid container60">
+            <article data-aos="flip-up" class="projects__grid__item">
                 artigo1a
             </article>
 
-            <article class="projects__grid__item">
+            <article data-aos="flip-up" data-aos-delay="50" class="projects__grid__item">
                 artigo2
             </article>
-            <article class="projects__grid__item">
+            <article data-aos="flip-up" data-aos-delay="100" class="projects__grid__item">
                 artigo3
             </article>
-            <article class="projects__grid__item">
+            <article data-aos="flip-up" data-aos-delay="150" class="projects__grid__item">
                 artigo4
             </article>
-            <article class="projects__grid__item">
+            <article data-aos="flip-up" data-aos-delay="200" class="projects__grid__item">
                 artigo5
             </article>
-            <article class="projects__grid__item">
+            <article data-aos="flip-up" data-aos-delay="250" class="projects__grid__item">
                 artigo6
             </article>
-            <article class="projects__grid__item">
+            <article data-aos="flip-up" data-aos-delay="300" class="projects__grid__item">
                 artigo7
             </article>
-            <article class="projects__grid__item">
+            <article data-aos="flip-up" data-aos-delay="350" class="projects__grid__item">
                 artigo8
             </article>
-            <article class="projects__grid__item">
+            <article data-aos="flip-up" data-aos-delay="400" class="projects__grid__item">
                 artigo9
             </article>
 
@@ -91,38 +94,38 @@
 
     <!-- SECTION TEAM -->
     <section id="Equipe" class="team">
-        <header class="team__header">
+        <header data-aos="flip-right" class="team__header">
             <h1>Equipe de Desenvolvimento</h1>
             <hr class="divider divider-primary">
         </header>
 
-        <div class="team__grid container60">
-            <article class="team__grid__item">
+        <div  class="team__grid container60">
+            <article data-aos="flip-left" class="team__grid__item">
                 membro 1
             </article>
 
-            <article class="team__grid__item">
+            <article data-aos="flip-left" data-aos-delay="50" class="team__grid__item">
                 membro 2
             </article>
-            <article class="team__grid__item">
+            <article data-aos="flip-left" data-aos-delay="100" class="team__grid__item">
                 membro 3
             </article>
-            <article class="team__grid__item">
+            <article data-aos="flip-left" data-aos-delay="150" class="team__grid__item">
                 membro 4
             </article>
-            <article class="team__grid__item">
+            <article data-aos="flip-left" data-aos-delay="200" class="team__grid__item">
                 membro 5
             </article>
-            <article class="team__grid__item">
+            <article data-aos="flip-left" data-aos-delay="250" class="team__grid__item">
                 membro 6
             </article>
-            <article class="team__grid__item">
+            <article data-aos="flip-left" data-aos-delay="300" class="team__grid__item">
                 membro 7
             </article>
-            <article class="team__grid__item">
+            <article data-aos="flip-left" data-aos-delay="350" class="team__grid__item">
                 membro 8
             </article>
-            <article class="team__grid__item">
+            <article data-aos="flip-left" data-aos-delay="400" class="team__grid__item">
                 membro 9
             </article>
         </div>
@@ -137,7 +140,7 @@
         </header>
 
         <div class="repositories__grid container70">
-            <article class="repositories__grid__item bg-3">
+            <article data-aos="flip-right"  class="repositories__grid__item bg-3">
                 <div class="repositories__grid__item__title">
                     <h1>Repositorio1</h1>
                 </div>
@@ -151,7 +154,7 @@
                 </div>
             </article>
 
-            <article class="repositories__grid__item bg-2">
+            <article data-aos="flip-right" data-aos-delay="50" class="repositories__grid__item bg-2">
                 <div class="repositories__grid__item__title">
                     <h1>Repositorio1</h1>
                 </div>
@@ -165,7 +168,7 @@
                 </div>
             </article>
 
-            <article class="repositories__grid__item bg-1">
+            <article data-aos="flip-right" data-aos-delay="100" class="repositories__grid__item bg-1">
                 <div class="repositories__grid__item__title">
                     <h1>Repositorio1</h1>
                 </div>
@@ -185,14 +188,14 @@
     <!-- SECTION SOCIAL -->
     <section id="Social" class="social-media">
         <div class="social-media__container">
-            <div class="social-media__item ">
-                <i class="fab fa-facebook-square pulse"></i>
+            <div data-aos="fade-down" class="social-media__item ">
+                <i  class="fab fa-facebook-square pulse"></i>
             </div>
-            <div class="social-media__item">
-                <i class="fab fa-linkedin pulse"></i>
+            <div data-aos="fade-up" class="social-media__item">
+                <i  class="fab fa-linkedin pulse"></i>
             </div>
-            <div class="social-media__item">
-                <i class="fab fa-github pulse"></i>
+            <div data-aos="fade-down" class="social-media__item">
+                <i  class="fab fa-github pulse"></i>
 
             </div>
         </div>
@@ -204,7 +207,7 @@
         <p>by <a class="link" href="https://fziliotti.github.io/Fziliotti/"> Fabrício Ziliotti</a> </p>
     </footer>
 
-    <canvas id="particulas"></canvas>
+
 
 
 
@@ -220,76 +223,19 @@
     </script>
 
 
-<script src="js/efeitoParticulas.js"></script>    
+    <script src="js/efeitoParticulas.js"></script>
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
     <script src="js/typewritter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-    <script src="js/noframework.waypoints.min.js"></script>
-
-    <!-- no points ABAIXO -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        const brand = document.querySelector('.intro__brand h1');
-        const title = document.querySelector('.intro__title');
-        const subtitle = document.querySelector('.intro__subtitle');
-        const t2 = new TimelineMax();
-        t2.from(brand, .5, {
-                x: 500,
-                opacity: 0
-            })
-            .from(title, .5, {
-                x: -500,
-                opacity: 0
-            })
-            .from(subtitle, .5, {
-                scale: 0,
-                opacity: 0
-            })
-
-        var flag1 = false;
-        var waypoint = new Waypoint({
-            element: document.querySelector('.projects'),
-            handler: () => {
-                if (!flag1) {
-                    const items = document.querySelectorAll('.projects__grid__item');
-                    const tl = new TimelineMax();
-                    tl.staggerFrom(items, .5, {
-                        scale: 0,
-                        opacity: 0
-                    }, .3);
-                    flag1 = true;
-                }
-                console.log("RODOU DENTRO DO WAYPONT1");
-            },
-            offset: '75%'
-        });
-
-        // SEGUNDA SECTION COM O WAYPOINT
-        var flag2 = false;
-        var waypoint2 = new Waypoint({
-            element: document.querySelector('.team'),
-            handler: () => {
-                if (!flag2) {
-                    const items2 = document.querySelectorAll('.team__grid__item');
-                    TweenMax.staggerFromTo(items2, .5, {
-                        scale: .3,
-                        rotation: 180
-                    }, {
-                        scale: 1.1,
-                        rotation: 0
-                    }, .3);
-                    flag2 = true;
-                }
-                console.log("RODOU DENTRO DO WAYPONT2");
-            },
-            offset: '75%'
+        AOS.init({
+            duration: 1200,
         })
     </script>
-
-
 
 
 
