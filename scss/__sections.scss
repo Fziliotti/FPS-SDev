@@ -16,7 +16,7 @@
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-
+    transition: 0.8s all ease-in-out;
 
     &__nav {
         position: absolute;
@@ -55,7 +55,9 @@
     }
 
     &__menu {
+        z-index: 2 ;
         &__cta {
+           
             position: absolute;
             top: 8%;
             right: 4%;
