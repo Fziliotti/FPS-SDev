@@ -1,0 +1,83 @@
+@media (max-width: 576px) {
+
+    .repositories__grid {
+        grid-template-columns: 1fr;
+
+    }
+
+    .projects {
+        -webkit-clip-path: none;
+        clip-path: none;
+        margin-top: -9rem;
+        padding: 15rem 0 19rem 0;
+        width: 100%;
+        ;
+
+    }
+
+    .projects__grid {
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+
+    .team {
+        margin-top: -11rem;
+    }
+
+    .team__grid {
+        grid-template-columns: 1fr 1fr;
+        width: 85%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .projects__grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .repositories__grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .team__grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media (min-width: 992px) {
+    .projects__grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .repositories__grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .team__grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media (min-width: 992px) {
+    .projects__grid {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .repositories__grid {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .team__grid {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
