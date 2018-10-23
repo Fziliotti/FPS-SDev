@@ -360,82 +360,84 @@
 
 @media (max-width: 576px) {
 
-    .repositories__grid{
+    .repositories__grid {
         grid-template-columns: 1fr;
-        
+
     }
 
-    .projects{
+    .projects {
         -webkit-clip-path: none;
-    clip-path: none;
-    margin-top: -9rem;
-    padding: 15rem 0 19rem 0;
-    
+        clip-path: none;
+        margin-top: -9rem;
+        padding: 15rem 0 19rem 0;
+        width: 100%;
+        ;
+
     }
 
-    .projects__grid{
+    .projects__grid {
         grid-template-columns: 1fr;
         width: 85%;
     }
 
-    .team{
+    .team {
         margin-top: -11rem;
     }
 
-    .team__grid{
+    .team__grid {
         grid-template-columns: 1fr 1fr;
         width: 85%;
     }
- }
+}
 
 
- @media (min-width: 768px) {
-    .projects__grid{
+@media (min-width: 768px) {
+    .projects__grid {
         grid-template-columns: 1fr 1fr;
-       
+
     }
 
-    .repositories__grid{
+    .repositories__grid {
         grid-template-columns: 1fr 1fr;
-       
+
     }
 
-    .team__grid{
+    .team__grid {
         grid-template-columns: 1fr 1fr;
-       
-    }
-  }
 
-  @media (min-width: 992px) {
-    .projects__grid{
-        grid-template-columns: 1fr 1fr ;
-       
     }
+}
 
-    .repositories__grid{
-        grid-template-columns: 1fr 1fr ;
-       
+@media (min-width: 992px) {
+    .projects__grid {
+        grid-template-columns: 1fr 1fr;
+
     }
 
-    .team__grid{
-        grid-template-columns: 1fr 1fr ;
-       
-    }
-  }
+    .repositories__grid {
+        grid-template-columns: 1fr 1fr;
 
-  @media (min-width: 992px) {
-    .projects__grid{
+    }
+
+    .team__grid {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media (min-width: 992px) {
+    .projects__grid {
         grid-template-columns: 1fr 1fr 1fr;
-       
+
     }
 
-    .repositories__grid{
+    .repositories__grid {
         grid-template-columns: 1fr 1fr 1fr;
-       
+
     }
 
-    .team__grid{
+    .team__grid {
         grid-template-columns: 1fr 1fr 1fr;
-       
+
     }
-  }
+}
