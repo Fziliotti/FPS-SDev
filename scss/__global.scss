@@ -131,6 +131,7 @@ body {
 }
 
 
+
 canvas {
     z-index: 0;
     position: relative;
@@ -138,4 +139,16 @@ canvas {
     left: 0;
     width: 100%;
     height: 85%;
+}
+
+.fa-user-tie{
+    font-size: 2.4rem;
+    margin-right: 1.2rem;
+    
+}
+
+.fa-code{
+    font-size: 2.4rem;
+    margin-left: 1.2rem;
+    
 }
