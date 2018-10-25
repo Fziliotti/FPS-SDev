@@ -9,7 +9,7 @@ let arquivos = [
 "https://use.fontawesome.com/releases/v5.4.1/css/all.css",
 "https://unpkg.com/aos@next/dist/aos.css",
 "https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js",
-"https://unpkg.com/aos@next/dist/aos.js"
+"https://unpkg.com/aos@2.3.1/dist/aos.js"
 ]
 
 self.addEventListener("install", function(){
