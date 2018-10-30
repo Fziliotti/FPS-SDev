@@ -8,6 +8,7 @@ background: #fff);
     @return map-get($colors, $color-name)
 }
 
+
 *,
 *::after,
 *::before {
@@ -90,7 +91,7 @@ body {
 
 
 .link {
-    color: white;
+    color: black;
     font-weight: bold;
     text-decoration: none;
     transition: .5s all ease-in-out;
@@ -98,7 +99,7 @@ body {
 }
 
 .link:hover {
-    color: #666;
+    color: #eee;
 }
 
 .typewrite__wrapper {
