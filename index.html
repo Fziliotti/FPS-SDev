@@ -1,278 +1,241 @@
 <!DOCTYPE html>
-<!-- <html lang="pt-br" manifest="offline.manifest"> -->
-<html lang="pt-br" >
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <link rel="manifest" href="app.manifest">
-    <meta name="theme-color" content="#323232">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=K2D|Open+Sans|Titillium+Web" rel="stylesheet">
-    <meta name="description" content="Front Page SASS">
-    <title>One Page Sass - Fziliotti</title>
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+	<title>One Page Sass - Fziliotti</title><!--force Internet Explorer 8/9/10 to render the page in the highest available mode  -->
+	<meta content="ie=edge" http-equiv="x-ua-compatible">
+	<meta content="#323232" name="theme-color">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<meta content="Front Page SASS" name="description">
+	<link href="https://fonts.googleapis.com/css?family=K2D|Open+Sans|Titillium+Web" rel="stylesheet">
+	<link href="app.manifest" rel="manifest" type="UTF-8">
+	<link href="/apple-touch-icon.png" rel="apple-touch-icon">
+	<link href="favicon.png" rel="icon" type="image/png">
+	<link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet">
+	<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- SECTION INTRO -->
-    <section class="intro">
-        <canvas id="particulas"></canvas>
-        <header class="intro__brand">
-            <h1 data-aos="fade-up">BRAND</h1>
-        </header>
-
-        <!-- BTN-SUPERIOR-ESQUERDO -->
-        <div class="intro__menu">
-
-            <div class="intro__menu__cta">
-                <div class="toggle-btn btn-1"></div>
-            </div>
-        </div>
-
-        <nav class="intro__nav">
-            <ul>
-                <li class="intro__nav__item"><a data-scroll href="#Projetos">Projetos</a> </li>
-                <li class="intro__nav__item"><a data-scroll href="#Equipe">Equipe</a></li>
-                <li class="intro__nav__item"><a data-scroll href="#Repositorios">Repositórios</a></li>
-                <li class="intro__nav__item"><a data-scroll href="#Social">Social</a></li>
-                <li class="intro__nav__item"><a title="Personal Blog" rel="Personal Blog" href="https://fziliotti.github.io/BlogFziliotti/"></a>
-                    Blog</li>
-            </ul>
-        </nav>
-
-        <div class="intro__text">
-            <h1 data-aos="fade-up" class="intro__title">
-                <span>OnePage</span>
-                <span class=" typewrite" data-period="1000" data-type='[ "by Fziliotti","with SASS", "with CSS3", "with Javascript", "Gulp"]'></span>
-            </h1>
-            <h2 data-aos="fade-down" class="intro__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Culpa, ea?</h2>
-        </div>
-    </section>
-
-    <!-- SECTION PROJECTS -->
-    <section id="Projetos" class="projects">
-        <header data-aos="flip-right" class="projects__header">
-            <h1>Projetos Desenvolvidos</h1>
-            <hr class="divider divider-primary">
-        </header>
-
-        <div class="projects__grid container60">
-            <article data-aos="flip-up" class="projects__grid__item">
-
-                projeto
-                <i class="fas fa-code"></i>
-            </article>
-
-            <article data-aos="flip-up" data-aos-delay="50" class="projects__grid__item">
-                projeto
-                <i class="fas fa-code"></i>
-            </article>
-            <article data-aos="flip-up" data-aos-delay="100" class="projects__grid__item">
-                projeto
-                <i class="fas fa-code"></i>
-            </article>
-            <article data-aos="flip-up" data-aos-delay="150" class="projects__grid__item">
-                projeto
-                <i class="fas fa-code"></i>
-            </article>
-            <article data-aos="flip-up" data-aos-delay="200" class="projects__grid__item">
-                projeto
-                <i class="fas fa-code"></i>
-            </article>
-            <article data-aos="flip-up" data-aos-delay="250" class="projects__grid__item">
-                projeto
-                <i class="fas fa-code"></i>
-            </article>
-            <article data-aos="flip-up" data-aos-delay="300" class="projects__grid__item">
-                projeto
-                <i class="fas fa-code"></i>
-            </article>
-            <article data-aos="flip-up" data-aos-delay="350" class="projects__grid__item">
-                projeto
-                <i class="fas fa-code"></i>
-            </article>
-
-
-        </div>
-    </section>
-
-    <!-- SECTION TEAM -->
-    <section id="Equipe" class="team">
-        <header data-aos="flip-right" class="team__header">
-            <h1>Equipe de Desenvolvimento</h1>
-            <hr class="divider divider-primary">
-        </header>
-
-        <div class="team__grid container60">
-            <article data-aos="flip-left" class="team__grid__item">
-                <div class="container80">
-                    <i class="fas fa-user-tie"></i>
-                    membro
-                </div>
-            </article>
-
-            <article data-aos="flip-left" data-aos-delay="50" class="team__grid__item">
-                <div class="container80">
-                    <i class="fas fa-user-tie"></i>
-                    membro
-                </div>
-            </article>
-            <article data-aos="flip-left" data-aos-delay="100" class="team__grid__item">
-                <div class="container80">
-                    <i class="fas fa-user-tie"></i>
-                    membro
-                </div>
-            </article>
-            <article data-aos="flip-left" data-aos-delay="150" class="team__grid__item">
-                <div class="container80">
-                    <i class="fas fa-user-tie"></i>
-                    membro
-                </div>
-            </article>
-            <article data-aos="flip-left" data-aos-delay="200" class="team__grid__item">
-                <div class="container80">
-                    <i class="fas fa-user-tie"></i>
-                    membro
-                </div>
-            </article>
-            <article data-aos="flip-left" data-aos-delay="250" class="team__grid__item">
-                <div class="container80">
-                    <i class="fas fa-user-tie"></i>
-                    membro
-                </div>
-            </article>
-            <article data-aos="flip-left" data-aos-delay="300" class="team__grid__item">
-                <div class="container80">
-                    <i class="fas fa-user-tie"></i>
-                    membro
-                </div>
-            </article>
-            <article data-aos="flip-left" data-aos-delay="350" class="team__grid__item">
-                <div class="container80">
-                    <i class="fas fa-user-tie"></i>
-                    membro
-                </div>
-            </article>
-            <article data-aos="flip-left" data-aos-delay="400" class="team__grid__item">
-                <div class="container80">
-                    <i class="fas fa-user-tie"></i>
-                    membro
-                </div>
-            </article>
-        </div>
-    </section>
-
-
-    <!-- SECTION REPOSITORIES -->
-    <section id="Repositorios" class="repositories">
-        <header class="repositories__header">
-            <h1>Repositórios do Github</h1>
-            <hr class="divider bg-3">
-        </header>
-
-        <div class="repositories__grid container70">
-            <article data-aos="flip-right" class="repositories__grid__item bg-3">
-                <div class="repositories__grid__item__title">
-                    <h1>Repositorio1</h1>
-                </div>
-                <hr class="divider-card  divider-tertiary ">
-                <div class="repositories__grid__item__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem exercitationem voluptatibus dicta
-                    saepe repudiandae nobis adipisci quidem. Voluptatibus, rem minima.
-                </div>
-                <div class="repositories__grid__item__footer pulse">
-                    <a href="">link aqui</a>
-                </div>
-            </article>
-
-            <article data-aos="flip-right" data-aos-delay="50" class="repositories__grid__item bg-2">
-                <div class="repositories__grid__item__title">
-                    <h1>Repositorio1</h1>
-                </div>
-                <hr class="divider-card  divider-tertiary">
-                <div class="repositories__grid__item__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem exercitationem voluptatibus dicta
-                    saepe repudiandae nobis adipisci quidem. Voluptatibus, rem minima.
-                </div>
-                <div class="repositories__grid__item__footer pulse">
-                    <a href="">link aqui</a>
-                </div>
-            </article>
-
-            <article data-aos="flip-right" data-aos-delay="100" class="repositories__grid__item bg-1">
-                <div class="repositories__grid__item__title">
-                    <h1>Repositorio1</h1>
-                </div>
-                <hr class="divider-card  divider-tertiary">
-                <div class="repositories__grid__item__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem exercitationem voluptatibus dicta
-                    saepe repudiandae nobis adipisci quidem. Voluptatibus, rem minima.
-                </div>
-                <div class="repositories__grid__item__footer pulse">
-                    <a href="">link aqui</a>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-    <!-- SECTION SOCIAL -->
-    <section id="Social" class="social-media">
-        <div class="social-media__container">
-            <div data-aos="fade-down" class="social-media__item ">
-                <i class="fab fa-facebook-square pulse"></i>
-            </div>
-            <div data-aos="fade-up" class="social-media__item">
-                <i class="fab fa-linkedin pulse"></i>
-            </div>
-            <div data-aos="fade-down" class="social-media__item">
-                <i class="fab fa-github pulse"></i>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER SITE -->
-    <footer class="footer" style="color:white; font-weight: 600;">
-        Developed with ❤ from scratch
-        <p>by <a title="site Pessoal"  class="link" href="https://fziliotti.github.io/Fziliotti/"> Fabrício Ziliotti</a> </p>
+	<!-- SECTION INTRO -->
+	<section class="intro">
+		<canvas id="particulas"></canvas>
+		<header class="intro__brand">
+			<h1 data-aos="fade-up">OnePage</h1>
+		</header><!-- BTN-SUPERIOR-ESQUERDO -->
+		<div class="intro__menu">
+			<div class="intro__menu__cta">
+				<div class="toggle-btn btn-1"></div>
+			</div>
+		</div>
+		<nav class="intro__nav">
+			<ul>
+				<li class="intro__nav__item">
+					<a data-scroll="" href="#Projetos" rel="Projetos desenvolvidos" title="Projetos">Projetos</a>
+				</li>
+				<li class="intro__nav__item">
+					<a data-scroll="" href="#Equipe" rel="Equipe" title="Equipe">Equipe</a>
+				</li>
+				<li class="intro__nav__item">
+					<a data-scroll="" href="#Repositorios" rel="Repositórios" title="Repositórios">Repositórios</a>
+				</li>
+				<li class="intro__nav__item">
+					<a data-scroll="" href="#Social" rel="Redes sociais" title="Social">Social</a>
+				</li>
+				<li class="intro__nav__item">
+					<a href="https://fziliotti.github.io/BlogFziliotti/" rel="Personal Blog" title="Personal Blog"></a> Blog
+				</li>
+			</ul>
+		</nav>
+		<div class="intro__text">
+			<h1 class="intro__title" data-aos="fade-up"><span>OnePage</span> <span class=" typewrite" data-period="1000" data-type='[ "by Fziliotti","with SASS", "with CSS3", "with Javascript", "Gulp"]'></span></h1>
+			<h2 class="intro__subtitle" data-aos="fade-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ea?</h2>
+		</div>
+	</section><!-- SECTION PROJECTS -->
+	<section class="projects" id="Projetos">
+		<header class="projects__header" data-aos="flip-right">
+			<h1>Projetos Desenvolvidos</h1>
+			<hr class="divider divider-primary">
+		</header>
+		<div class="projects__grid container60">
+			<article class="projects__grid__item" data-aos="flip-up">
+				<h3>projeto</h3><i class="fas fa-code"></i>
+			</article>
+			<article class="projects__grid__item" data-aos="flip-up" data-aos-delay="50">
+				<h3>projeto</h3><i class="fas fa-code"></i>
+			</article>
+			<article class="projects__grid__item" data-aos="flip-up" data-aos-delay="100">
+				<h3>projeto</h3><i class="fas fa-code"></i>
+			</article>
+			<article class="projects__grid__item" data-aos="flip-up" data-aos-delay="150">
+				<h3>projeto</h3><i class="fas fa-code"></i>
+			</article>
+			<article class="projects__grid__item" data-aos="flip-up" data-aos-delay="200">
+				<h3>projeto</h3><i class="fas fa-code"></i>
+			</article>
+			<article class="projects__grid__item" data-aos="flip-up" data-aos-delay="250">
+				<h3>projeto</h3><i class="fas fa-code"></i>
+			</article>
+			<article class="projects__grid__item" data-aos="flip-up" data-aos-delay="300">
+				<h3>projeto</h3><i class="fas fa-code"></i>
+			</article>
+			<article class="projects__grid__item" data-aos="flip-up" data-aos-delay="350">
+				<h3>projeto</h3><i class="fas fa-code"></i>
+			</article>
+		</div>
+	</section><!-- SECTION TEAM -->
+	<section class="team" id="Equipe">
+		<header class="team__header" data-aos="flip-right">
+			<h1>Equipe de Desenvolvimento</h1>
+			<hr class="divider divider-primary">
+		</header>
+		<div class="team__grid container60">
+			<article class="team__grid__item" data-aos="flip-left">
+				<div class="container80">
+					<i class="fas fa-user-tie"></i>
+					<h3>membro</h3>
+				</div>
+			</article>
+			<article class="team__grid__item" data-aos="flip-left" data-aos-delay="50">
+				<div class="container80">
+					<i class="fas fa-user-tie"></i>
+					<h3>membro</h3>
+				</div>
+			</article>
+			<article class="team__grid__item" data-aos="flip-left" data-aos-delay="100">
+				<div class="container80">
+					<i class="fas fa-user-tie"></i>
+					<h3>membro</h3>
+				</div>
+			</article>
+			<article class="team__grid__item" data-aos="flip-left" data-aos-delay="150">
+				<div class="container80">
+					<i class="fas fa-user-tie"></i>
+					<h3>membro</h3>
+				</div>
+			</article>
+			<article class="team__grid__item" data-aos="flip-left" data-aos-delay="200">
+				<div class="container80">
+					<i class="fas fa-user-tie"></i>
+					<h3>membro</h3>
+				</div>
+			</article>
+			<article class="team__grid__item" data-aos="flip-left" data-aos-delay="250">
+				<div class="container80">
+					<i class="fas fa-user-tie"></i>
+					<h3>membro</h3>
+				</div>
+			</article>
+			<article class="team__grid__item" data-aos="flip-left" data-aos-delay="300">
+				<div class="container80">
+					<i class="fas fa-user-tie"></i>
+					<h3>membro</h3>
+				</div>
+			</article>
+			<article class="team__grid__item" data-aos="flip-left" data-aos-delay="350">
+				<div class="container80">
+					<i class="fas fa-user-tie"></i>
+					<h3>membro</h3>
+				</div>
+			</article>
+			<article class="team__grid__item" data-aos="flip-left" data-aos-delay="400">
+				<div class="container80">
+					<i class="fas fa-user-tie"></i>
+					<h3>membro</h3>
+				</div>
+			</article>
+		</div>
+	</section><!-- SECTION REPOSITORIES -->
+	<section class="repositories" id="Repositorios">
+		<header class="repositories__header">
+			<h1>Repositórios do Github</h1>
+			<hr class="divider bg-3">
+		</header>
+		<div class="repositories__grid container70">
+			<article class="repositories__grid__item bg-3" data-aos="flip-right">
+				<div class="repositories__grid__item__title">
+					<h1>Repositorio1</h1>
+				</div>
+				<hr class="divider-card divider-tertiary">
+				<div class="repositories__grid__item__text">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem exercitationem voluptatibus dicta saepe repudiandae nobis adipisci quidem. Voluptatibus, rem minima.
+				</div>
+				<div class="repositories__grid__item__footer pulse">
+					<a href="">link aqui</a>
+				</div>
+			</article>
+			<article class="repositories__grid__item bg-2" data-aos="flip-right" data-aos-delay="50">
+				<div class="repositories__grid__item__title">
+					<h1>Repositorio1</h1>
+				</div>
+				<hr class="divider-card divider-tertiary">
+				<div class="repositories__grid__item__text">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem exercitationem voluptatibus dicta saepe repudiandae nobis adipisci quidem. Voluptatibus, rem minima.
+				</div>
+				<div class="repositories__grid__item__footer pulse">
+					<a href="">link aqui</a>
+				</div>
+			</article>
+			<article class="repositories__grid__item bg-1" data-aos="flip-right" data-aos-delay="100">
+				<div class="repositories__grid__item__title">
+					<h1>Repositorio1</h1>
+				</div>
+				<hr class="divider-card divider-tertiary">
+				<div class="repositories__grid__item__text">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem exercitationem voluptatibus dicta saepe repudiandae nobis adipisci quidem. Voluptatibus, rem minima.
+				</div>
+				<div class="repositories__grid__item__footer pulse">
+					<a href="">link aqui</a>
+				</div>
+			</article>
+		</div>
+	</section><!-- SECTION SOCIAL -->
+	<section class="social-media" id="Social">
+		<div class="social-media__container">
+			<div class="social-media__item" data-aos="fade-down">
+				<i class="fab fa-facebook-square pulse"></i>
+			</div>
+			<div class="social-media__item" data-aos="fade-up">
+				<i class="fab fa-linkedin pulse"></i>
+			</div>
+			<div class="social-media__item" data-aos="fade-down">
+				<i class="fab fa-github pulse"></i>
+			</div>
+		</div>
+	</section><!-- FOOTER SITE -->
+	<footer class="footer">
+		<div class="footer__box">
+			<p>Developed with ❤ from scratch</p>
+			<p>by <a class="link" href="https://fziliotti.github.io/Fziliotti/" title="site Pessoal">Fabrício Ziliotti</a></p>
+		</div>
     </footer>
+    
 
-
-
-
-    <script src="js/sw/registra.js"></script>
-    <!-- SCRIPTS  -->
-    <script>
-        var btnMenu = document.querySelector(".intro__menu__cta");
-        var introNav = document.querySelector(".intro__nav");
-        btnMenu.addEventListener("click", function () {
-            btnMenu.classList.toggle("active");
-            introNav.classList.toggle("show");
-        });
-    </script>
-    <script src="js/efeitoParticulas.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
-    <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
-    </script>
-    <script src="js/typewritter.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200,
-        })
-    </script>
-
-
-
-
+	<script src="js/sw/registra.js" type="text/javascript"></script> 
+	 
+	<script>
+	       var btnMenu = document.querySelector(".intro__menu__cta");
+	       var introNav = document.querySelector(".intro__nav");
+	       btnMenu.addEventListener("click", function () {
+	           btnMenu.classList.toggle("active");
+	           introNav.classList.toggle("show");
+	       });
+	</script> 
+	<script src="js/efeitoParticulas.js" type="text/javascript">
+	</script> 
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js" type="text/javascript">
+	</script> 
+	<script>
+	       var scroll = new SmoothScroll('a[href*="#"]');
+	</script> 
+	<script src="js/typewritter.js" type="text/javascript">
+	</script> 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" type="text/javascript">
+	</script> 
+	<script>
+	       AOS.init({
+	           duration: 1200,
+	       })
+	</script>
 </body>
-
 </html>
