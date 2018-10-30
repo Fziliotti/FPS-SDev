@@ -13,6 +13,7 @@
 - create new components
 - create new animations
 - improve the canvas
+- use the plugin Outline in the website for improve the semantic
 
 link site: https://fziliotti.github.io/FPS-SDev/
 a
