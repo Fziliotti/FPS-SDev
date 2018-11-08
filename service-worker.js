@@ -20,7 +20,7 @@ self.addEventListener("activate", function(){
     caches.open("pwa-arquivos-" + versao).then(cache => {
         cache.addAll(arquivos)
             .then(function(){
-                caches.delete("pwa-arquivos" + (versao - 1 ))   
+                caches.delete("pwa-arquivos-" + (versao - 1 ))   
                 caches.delete("pwa-arquivos")   
             })
         
