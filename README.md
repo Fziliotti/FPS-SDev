@@ -1,6 +1,6 @@
-# FrontPageSass
+# One Page Fziliotti
 
-## A simple project for testing SASS and CSS3 animations
+## A simple One Page to study SASS, Gulp, Animations, Canvas and the Progressive Web Apps
 
 - clone the project
 - run: npm install
@@ -15,5 +15,5 @@
 - improve the canvas
 - use the plugin Outline in the website for improve the semantic
 
-link site: https://fziliotti.github.io/FPS-SDev/
-a
+link site: https://fziliotti.github.io/OnePageFZ
+
