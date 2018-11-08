@@ -13,15 +13,15 @@ let arquivos = [
 ]
 
 self.addEventListener("install", function(){
-    console.log("Instalou")
+    console.log("Instalou service worker!")
 })
 
 self.addEventListener("activate", function(){
     caches.open("pwa-arquivos-" + versao).then(cache => {
         cache.addAll(arquivos)
             .then(function(){
-                caches.delete("ceep-arquivos-" + (versao - 1 ))   
-                caches.delete("ceep-arquivos")   
+                caches.delete("pwa-arquivos" + (versao - 1 ))   
+                caches.delete("pwa-arquivos")   
             })
         
     })
